@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.maincont{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color:goldenrod;
+    align-items: center;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    width: 100%;
+    height: 3.5rem;
+}
+.maincont h3{
+  color: lightgoldenrodyellow;
+}
+.maincont p:hover{
+    background-color: lightgrey;
+    border-radius: 2px;
+}
+.mylink{
+    text-decoration: none;
+}
+.mylink p{
+    color:goldenrod;
+}
