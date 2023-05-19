@@ -33,7 +33,7 @@ const Carousel = ({ images }) => {
             key={index}
             className={styles.carouselImage}
             src={image}
-            alt="Carousel Image"
+            alt="Carousel "
           />
         ))}
       </div>

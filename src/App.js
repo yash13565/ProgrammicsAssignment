@@ -7,6 +7,10 @@ import Comedy from './Pages/Comedy';
 import Subscribe from './Pages/Subscribe';
 import Login from './Pages/Login';
 import News from './Pages/News';
+import Recomended from './Pages/Recomended';
+import PopularShows from './Pages/PopularShows';
+import New from './Pages/New&Upcomings';
+import Animated from './Pages/Animated';
 function App() {
   return (
     <Routes>
@@ -17,6 +21,10 @@ function App() {
       <Route path='/News' element={<News />} />
       <Route path='/subscribe' element={<Subscribe />} />
       <Route path='/login' element={<Login />} />
+      <Route path='/recomended' element={<Recomended />} />
+      <Route path='/Popularshows' element={<PopularShows />} />
+      <Route path='/newupcoming' element={<New />} />
+      <Route path='/animated' element={<Animated />} />
     </Routes>
   );
 }

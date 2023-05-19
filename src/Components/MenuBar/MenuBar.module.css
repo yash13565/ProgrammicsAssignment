@@ -1,0 +1,21 @@
+.maincont{
+    display: flex;
+    gap: 1rem;
+}
+.cards{
+    height: 15rem;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.para{
+    position: absolute;
+    color: white;
+    font-weight: bolder;
+}
+.cards:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}

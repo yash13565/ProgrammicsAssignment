@@ -3,6 +3,7 @@ import TopNavbar from '../Components/TopNavbar/TopNavbar'
 import LeftNavbar from '../Components/LeftNavbar/LeftNavbar'
 import Slider from '../Components/SliderComponent/Slider'
 import style from './Home.module.css'
+import MenuBar from '../Components/MenuBar/MenuBar'
 function Home() {
     const images = [
         'https://www.pixelstalk.net/wp-content/uploads/2016/10/comedy-wallpapers-rDdwrhC.jpg',
@@ -17,10 +18,15 @@ function Home() {
       ];
   return (
     <div >
+      <div className={style.nav}>
     <TopNavbar/>
+    </div>
     <div className={style.homecont}>
     <LeftNavbar/>
     <Slider images={images}/>
+    </div>
+    <div className={style.menu}>
+    <MenuBar/>
     </div>
     </div>
   )

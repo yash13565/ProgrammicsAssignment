@@ -1,0 +1,41 @@
+.loginpopup{
+    display: inline-block;
+}
+
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    height: 20rem;
+    width: 20rem;
+    z-index: 1;
+}
+
+.popup input{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    height: 2rem;
+    outline: none;
+    border: none;
+}
+.butn{
+    border: none;
+    background-color: black;
+    color: goldenrod;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.butn:hover{
+    background-color: lightgrey;
+    border-radius: 2px;
+}

@@ -2,3 +2,11 @@
     display: flex;
     gap: 7rem;
 }
+.nav{
+    position: relative;
+}
+.menu{
+    position:absolute;
+    top: 55%;
+    left:28%;
+}
