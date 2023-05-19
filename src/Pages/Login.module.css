@@ -7,14 +7,18 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color: #ffffff;
+    background-color: lightblue;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    height: 20rem;
+    height: 15rem;
     width: 20rem;
     z-index: 1;
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .popup input{
@@ -25,6 +29,9 @@
     height: 2rem;
     outline: none;
     border: none;
+    width: 15rem;
+    border-radius: 8px;
+    padding-left: 2rem;
 }
 .butn{
     border: none;
@@ -34,8 +41,34 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     cursor: pointer;
+   
 }
 .butn:hover{
     background-color: lightgrey;
     border-radius: 2px;
+}
+.login{
+    width: 10rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: lightgreen;
+    cursor: pointer;
+}
+.cancelbtn{
+    position:absolute;
+    top: 2%;
+    left: 2%;
+    font-size: 1.5rem;
+}
+.popup h3{
+    position:absolute;
+    top: 12%;
+    font-size: 2rem;
+}
+.popup h4{
+    position:absolute;
+    top: 26%;
+    font-size: 1rem;
+    color: black;
 }

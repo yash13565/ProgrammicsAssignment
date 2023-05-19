@@ -8,8 +8,11 @@ function Login() {
   function handlePopup(){
     setIsOpen(!isOpen)
   }
+  console.log(data)
   function handleSubmit(e){
     e.preventDefault()
+    setData('')
+    setIsOpen(false)
     navigate('/')
   }
   return (
@@ -18,12 +21,14 @@ function Login() {
       {
         isOpen &&(
           <div className={style.popup}>
-            <form onSubmit={handleSubmit}>
-            <input type='email' placeholder='Enter your Email' onChange={(e)=>setData(e.target.value)} required/>
-            <input type='password' placeholder='Enter your Email' onChange={(e)=>setData(e.target.value)} required/>
-            <input type='submit'/>      
+            <p  className={style.cancelbtn}onClick={handlePopup} >X</p>
+              <h3>Login Here😁</h3>
+              <h4>* Indicates all the required fields</h4>
+            <form >
+            *<input type='email' placeholder='Enter your Email' onChange={(e)=>setData(e.target.value)} required/>
+            *<input type='password' placeholder='Enter your Email' onChange={(e)=>setData(e.target.value)} required/>
+            <button onClick={handleSubmit} className={style.login}>Login</button>      
                   </form>
-            <button onClick={handlePopup} >X</button>
             </div>
         )
       }
